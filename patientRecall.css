@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-image: url(hospital.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+#btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btn:hover{
+    background-color: #0a310c;
+
+}
+
+#searchBar {
+    
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#patientList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: turquoise;
+}
+
+.patient-item.overdue {
+    background-color: #8f0612;
+    border-color: #f5c6cb;
+}

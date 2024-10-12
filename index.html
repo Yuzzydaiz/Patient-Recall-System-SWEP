@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Recall System</title>
+    <link rel="stylesheet" href="patientRecall.css">
+</head>
+<body>
+    <h1>Patient Recall System</h1>
+
+    <!-- Form to input new patient details including recall date -->
+    <form id="patientForm" onsubmit="addPatient(event)">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="text" id="patientMail" placeholder="Gmail" required>
+        <input type="number" id="patientAge" placeholder="Patient Age" required>
+        <textarea id="patientCondition" placeholder="Describe what is wrong..." required></textarea>
+        <label for="recallDate">Recall Date:</label>
+        <input type="date" id="recallDate" required>
+        <button id="btn" type="submit">Add Patient</button>
+    </form>
+
+    <!-- Search bar to filter patients -->
+    <input type="text" id="searchBar" placeholder="Search patient by name..." onkeyup="searchPatients()">
+    
+    <!-- Patient list -->
+    <div id="patientList">
+        <!-- This is where the list of patients will be rendered -->
+    </div>
+
+    <script src="patientRecall.js"></script>
+</body>
+</html>
